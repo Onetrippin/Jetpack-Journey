@@ -1,0 +1,1782 @@
+function LettersAndSymbolsDrafts.drawS 1
+push constant 5
+push argument 2
+call Math.multiply 2
+pop local 0
+push argument 4
+call Screen.setColor 1
+pop temp 0
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 0
+push argument 2
+push constant 5
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 1
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 3
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 3
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 5
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 6
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 1
+push argument 2
+push constant 6
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 7
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push local 0
+add
+push argument 3
+add
+pop argument 0
+push argument 0
+return
+function LettersAndSymbolsDrafts.drawC 1
+push constant 5
+push argument 2
+call Math.multiply 2
+pop local 0
+push argument 4
+call Screen.setColor 1
+pop temp 0
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 0
+push argument 2
+push constant 5
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 1
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 6
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 6
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 5
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 7
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push local 0
+add
+push argument 3
+add
+pop argument 0
+push argument 0
+return
+function LettersAndSymbolsDrafts.drawT 1
+push constant 5
+push argument 2
+call Math.multiply 2
+pop local 0
+push argument 4
+call Screen.setColor 1
+pop temp 0
+push argument 0
+push argument 1
+push argument 0
+push argument 2
+push constant 5
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 2
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 3
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 7
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push local 0
+add
+push argument 3
+add
+pop argument 0
+push argument 0
+return
+function LettersAndSymbolsDrafts.drawI 1
+push constant 5
+push argument 2
+call Math.multiply 2
+pop local 0
+push argument 4
+call Screen.setColor 1
+pop temp 0
+push argument 0
+push argument 1
+push argument 0
+push argument 2
+push constant 5
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 2
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 3
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 6
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 1
+push argument 2
+push constant 6
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 5
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 7
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push local 0
+add
+push argument 3
+add
+pop argument 0
+push argument 0
+return
+function LettersAndSymbolsDrafts.drawP 1
+push constant 5
+push argument 2
+call Math.multiply 2
+pop local 0
+push argument 4
+call Screen.setColor 1
+pop temp 0
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 1
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 7
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 5
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 3
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 3
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push local 0
+add
+push argument 3
+add
+pop argument 0
+push argument 0
+return
+function LettersAndSymbolsDrafts.drawA 1
+push constant 5
+push argument 2
+call Math.multiply 2
+pop local 0
+push argument 4
+call Screen.setColor 1
+pop temp 0
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 1
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 7
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 1
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 5
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 5
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 7
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push local 0
+add
+push argument 3
+add
+pop argument 0
+push argument 0
+return
+function LettersAndSymbolsDrafts.drawJ 1
+push constant 5
+push argument 2
+call Math.multiply 2
+pop local 0
+push argument 4
+call Screen.setColor 1
+pop temp 0
+push argument 0
+push argument 2
+push constant 2
+call Math.multiply 2
+add
+push argument 1
+push argument 0
+push argument 2
+push constant 5
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 3
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 6
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 6
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 3
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 7
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 1
+push argument 2
+push constant 5
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 6
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push local 0
+add
+push argument 3
+add
+pop argument 0
+push argument 0
+return
+function LettersAndSymbolsDrafts.drawK 1
+push constant 5
+push argument 2
+call Math.multiply 2
+pop local 0
+push argument 4
+call Screen.setColor 1
+pop temp 0
+push argument 0
+push argument 1
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 7
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 1
+push argument 2
+push constant 2
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 3
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 3
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 5
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 7
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 3
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 3
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 0
+push argument 2
+push constant 5
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 3
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 2
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push local 0
+add
+push argument 3
+add
+pop argument 0
+push argument 0
+return
+function LettersAndSymbolsDrafts.drawU 1
+push constant 5
+push argument 2
+call Math.multiply 2
+pop local 0
+push argument 4
+call Screen.setColor 1
+pop temp 0
+push argument 0
+push argument 1
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 6
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 6
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 7
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 0
+push argument 2
+push constant 5
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 6
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push local 0
+add
+push argument 3
+add
+pop argument 0
+push argument 0
+return
+function LettersAndSymbolsDrafts.drawN 1
+push constant 5
+push argument 2
+call Math.multiply 2
+pop local 0
+push argument 4
+call Screen.setColor 1
+pop temp 0
+push argument 0
+push argument 1
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 7
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 2
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 2
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 3
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 2
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 3
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 3
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 3
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 5
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 0
+push argument 2
+push constant 5
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 7
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push local 0
+add
+push argument 3
+add
+pop argument 0
+push argument 0
+return
+function LettersAndSymbolsDrafts.drawY 1
+push constant 5
+push argument 2
+call Math.multiply 2
+pop local 0
+push argument 4
+call Screen.setColor 1
+pop temp 0
+push argument 0
+push argument 1
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 2
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 2
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 2
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 3
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 2
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 3
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 6
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 7
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 0
+push argument 2
+push constant 5
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 6
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 1
+push argument 2
+push constant 5
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 6
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push local 0
+add
+push argument 3
+add
+pop argument 0
+push argument 0
+return
+function LettersAndSymbolsDrafts.drawB 1
+push constant 5
+push argument 2
+call Math.multiply 2
+pop local 0
+push argument 4
+call Screen.setColor 1
+pop temp 0
+push argument 0
+push argument 1
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 1
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 7
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 1
+push argument 2
+push constant 6
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 7
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 5
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 3
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 2
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 5
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 6
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 1
+push argument 2
+push constant 3
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push local 0
+add
+push argument 3
+add
+pop argument 0
+push argument 0
+return
+function LettersAndSymbolsDrafts.drawM 1
+push constant 5
+push argument 2
+call Math.multiply 2
+pop local 0
+push argument 4
+call Screen.setColor 1
+pop temp 0
+push argument 0
+push argument 1
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 7
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 0
+push argument 2
+push constant 5
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 7
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 2
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 2
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 3
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 2
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 2
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 3
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 3
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push local 0
+add
+push argument 3
+add
+pop argument 0
+push argument 0
+return
+function LettersAndSymbolsDrafts.drawR 1
+push constant 5
+push argument 2
+call Math.multiply 2
+pop local 0
+push argument 4
+call Screen.setColor 1
+pop temp 0
+push argument 0
+push argument 2
+add
+push argument 1
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 1
+push argument 0
+push argument 2
+add
+push argument 1
+push argument 2
+push constant 7
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 5
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 3
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 3
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 5
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 7
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push local 0
+add
+push argument 3
+add
+pop argument 0
+push argument 0
+return
+function LettersAndSymbolsDrafts.drawE 1
+push constant 5
+push argument 2
+call Math.multiply 2
+pop local 0
+push argument 4
+call Screen.setColor 1
+pop temp 0
+push argument 0
+push argument 1
+push argument 0
+push argument 2
+push constant 5
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 1
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 7
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 1
+push argument 2
+push constant 3
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 1
+push argument 2
+push constant 6
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 5
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 7
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push local 0
+add
+push argument 3
+add
+pop argument 0
+push argument 0
+return
+function LettersAndSymbolsDrafts.drawO 1
+push constant 5
+push argument 2
+call Math.multiply 2
+pop local 0
+push argument 4
+call Screen.setColor 1
+pop temp 0
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 1
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 6
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 6
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 7
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 5
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 6
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push local 0
+add
+push argument 3
+add
+pop argument 0
+push argument 0
+return
+function LettersAndSymbolsDrafts.drawQ 1
+push constant 5
+push argument 2
+call Math.multiply 2
+pop local 0
+push argument 4
+call Screen.setColor 1
+pop temp 0
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 1
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 6
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 6
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 7
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 5
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 6
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 2
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 5
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 3
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 6
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 6
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 5
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 7
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push local 0
+add
+push argument 3
+add
+pop argument 0
+push argument 0
+return
+function LettersAndSymbolsDrafts.drawColon 1
+push constant 1
+push argument 2
+call Math.multiply 2
+pop local 0
+push argument 4
+call Screen.setColor 1
+pop temp 0
+push argument 0
+push argument 1
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 2
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push argument 1
+push argument 2
+push constant 4
+call Math.multiply 2
+add
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 5
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push local 0
+add
+push argument 3
+add
+pop argument 0
+push argument 0
+return
+function LettersAndSymbolsDrafts.drawQuote 1
+push constant 1
+push argument 2
+call Math.multiply 2
+pop local 0
+push argument 4
+call Screen.setColor 1
+pop temp 0
+push argument 0
+push argument 1
+push argument 0
+push argument 2
+push constant 1
+call Math.multiply 2
+add
+push argument 1
+push argument 2
+push constant 3
+call Math.multiply 2
+add
+call Screen.drawRectangle 4
+pop temp 0
+push argument 0
+push local 0
+add
+push argument 3
+add
+pop argument 0
+push argument 0
+return

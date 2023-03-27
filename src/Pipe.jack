@@ -1,0 +1,93 @@
+/** Создание и обновление изображений колонн */
+class Pipe
+{
+  field int screenWidth, screenHeight;           // Ширина, высота экрана
+  field int xPos;                                // Координа X колонны (состоит из верхней и нижней частей)
+  field int gapSize;                             // Расстояние между верхней и нижней частями колонны
+  field int gapTopYPos;                          // Координата низа верхней части колонны по Y
+  field int gapBottomYPos;                       // Координата верха нижней части колонны по Y
+  field int width;                               // Полная ширина колонны
+  field int widthCurrent;                        // Ширина видимой части колонны
+  field int widthIncrement;                      // Величина сдвига колонны за шаг
+  
+  constructor Pipe new(int gapOffset) {
+    let screenWidth = 512;
+    let screenHeight = 256;
+    let xPos = 509;
+    let gapSize= 65;
+    let gapTopYPos = calculateGapTop(gapOffset);
+    let gapBottomYPos = (gapTopYPos + gapSize);
+    let width = 15;
+    let widthIncrement = 1;
+    let widthCurrent = widthIncrement;
+    return this;
+  }
+
+  /** Определение координаты низа верхней части колонны */
+  method int calculateGapTop(int offset) {
+    var int mod;
+    let mod = MyMath.mod(offset, 6);
+    return (mod + 1) * 30;
+  }
+
+  /** Сдвиг колонны влево и удаление, если она выходит за пределы экрана */
+  method void moveLeft() {
+    if (xPos < (screenWidth - width )) {
+      do Screen.setColor(false);
+      do Screen.drawRectangle(xPos + widthCurrent - widthIncrement, 0, xPos + widthCurrent, gapTopYPos);
+      do Screen.drawRectangle(xPos + widthCurrent - widthIncrement, gapBottomYPos, xPos + widthCurrent, 255);
+    }
+
+    if (widthCurrent < width) {
+      if (xPos > 0) {
+        let widthCurrent = widthCurrent + widthIncrement;
+      }
+    }
+
+    if (xPos > 1) {
+      let xPos = xPos - widthIncrement;
+    } else {
+      let xPos = 0;
+      let widthCurrent = widthCurrent - widthIncrement;
+    }
+    return;
+  }
+
+  method int getWidthCurrent() {
+    return widthCurrent;
+  }
+
+  method int getWidthIncrement() {
+    return widthIncrement;
+  }
+
+  method int getXPos() {
+    return xPos;
+  } 
+
+  /** Получение координаты по Y у низа верхней части колонны */
+  method int getGapTopY() {
+    return gapTopYPos;
+  }
+
+  /** Получение координаты по Y у верха нижней части колонны */
+  method int getGapBottomY() {
+    return gapBottomYPos;
+  }
+
+  /** Отрисовка колонны, расположенной по xPos */
+  method void draw() {
+    if (xPos - widthIncrement > 0) {
+      do Screen.setColor(true);
+      do Screen.drawRectangle(xPos - widthIncrement, 0, xPos, gapTopYPos);
+      do Screen.drawRectangle(xPos - widthIncrement, gapBottomYPos, xPos, 255);
+    }
+    return;
+  }
+
+  /** Удаление колонн */
+  method void dispose() {
+     do Memory.deAlloc(this);
+     return;
+  }
+}

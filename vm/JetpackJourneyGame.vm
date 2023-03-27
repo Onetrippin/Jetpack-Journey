@@ -1,0 +1,1078 @@
+function JetpackJourneyGame.new 0
+push constant 15
+call Memory.alloc 1
+pop pointer 0
+push constant 150
+pop this 4
+call Scoreboard.new 0
+pop this 1
+push constant 10
+call Array.new 1
+pop this 5
+push constant 0
+pop this 6
+push constant 100
+pop this 7
+push constant 0
+pop this 8
+push constant 1
+pop this 9
+push constant 0
+pop this 10
+push pointer 0
+return
+function JetpackJourneyGame.drawName 0
+push argument 0
+pop pointer 0
+push constant 80
+pop this 12
+push constant 10
+pop this 13
+push constant 5
+pop this 11
+push constant 4
+pop this 14
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawJ 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawE 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawT 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawP 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawA 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawC 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawK 5
+pop this 12
+push this 12
+push this 11
+add
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawJ 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawO 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawU 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawR 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawN 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawE 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawY 5
+pop this 12
+push constant 0
+return
+function JetpackJourneyGame.drawJumpInstruction 0
+push argument 0
+pop pointer 0
+push constant 110
+pop this 12
+push constant 50
+pop this 13
+push constant 4
+pop this 11
+push constant 2
+pop this 14
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawP 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawR 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawE 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawS 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawS 5
+pop this 12
+push this 12
+push this 11
+add
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawS 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawP 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawA 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawC 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawE 5
+pop this 12
+push this 12
+push this 11
+add
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawB 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawA 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawR 5
+pop this 12
+push this 12
+push this 11
+add
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawT 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawO 5
+pop this 12
+push this 12
+push this 11
+add
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawJ 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawU 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawM 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawP 5
+pop this 12
+push constant 0
+return
+function JetpackJourneyGame.drawQuitInstruction 0
+push argument 0
+pop pointer 0
+push constant 170
+pop this 12
+push constant 230
+pop this 13
+push constant 3
+pop this 11
+push constant 2
+pop this 14
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawP 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawR 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawE 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawS 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawS 5
+pop this 12
+push this 12
+push this 11
+add
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawQuote 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawQ 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawQuote 5
+pop this 12
+push this 12
+push this 11
+add
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawT 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawO 5
+pop this 12
+push this 12
+push this 11
+add
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawQ 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawU 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawI 5
+pop this 12
+push this 12
+push this 13
+push this 14
+push this 11
+push constant 0
+not
+call LettersAndSymbolsDrafts.drawT 5
+pop this 12
+push constant 0
+return
+function JetpackJourneyGame.eraseInscriptions 0
+push argument 0
+pop pointer 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 0
+push constant 0
+push constant 511
+push constant 80
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+push this 13
+push constant 511
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function JetpackJourneyGame.run 2
+push argument 0
+pop pointer 0
+push pointer 0
+call JetpackJourneyGame.initializeGameState 1
+pop temp 0
+push pointer 0
+call JetpackJourneyGame.waitForGameToStart 1
+pop temp 0
+push constant 32
+pop local 1
+label WHILE_EXP0
+push local 0
+push constant 81
+eq
+not
+not
+if-goto WHILE_END0
+push local 0
+push constant 32
+eq
+push local 1
+push constant 32
+eq
+not
+and
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push this 9
+push constant 1
+add
+pop this 9
+push this 0
+call Player.moveDown 1
+pop temp 0
+goto IF_END0
+label IF_FALSE0
+push pointer 0
+call JetpackJourneyGame.updatePlayerFallState 1
+pop temp 0
+push pointer 0
+call JetpackJourneyGame.updatePlayerState 1
+pop temp 0
+label IF_END0
+push pointer 0
+call JetpackJourneyGame.findCrash 1
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push pointer 0
+call JetpackJourneyGame.displayScore 1
+pop temp 0
+push constant 4000
+call Sys.wait 1
+pop temp 0
+push pointer 0
+call JetpackJourneyGame.initializeGameState 1
+pop temp 0
+push pointer 0
+call JetpackJourneyGame.waitForGameToStart 1
+pop temp 0
+label IF_FALSE1
+push pointer 0
+call JetpackJourneyGame.draw 1
+pop temp 0
+push local 0
+pop local 1
+call Keyboard.keyPressed 0
+pop local 0
+push constant 10
+call Sys.wait 1
+pop temp 0
+goto WHILE_EXP0
+label WHILE_END0
+push constant 0
+return
+function JetpackJourneyGame.waitForGameToStart 1
+push argument 0
+pop pointer 0
+call Keyboard.keyPressed 0
+pop local 0
+label WHILE_EXP0
+push local 0
+push constant 0
+eq
+not
+if-goto WHILE_END0
+push constant 10
+call Sys.wait 1
+pop temp 0
+call Keyboard.keyPressed 0
+pop local 0
+push this 0
+call Player.draw 1
+pop temp 0
+push pointer 0
+call JetpackJourneyGame.updatePlayerState 1
+pop temp 0
+goto WHILE_EXP0
+label WHILE_END0
+push pointer 0
+call JetpackJourneyGame.eraseInscriptions 1
+pop temp 0
+push constant 0
+return
+function JetpackJourneyGame.initializeGameState 2
+push argument 0
+pop pointer 0
+push constant 0
+pop local 1
+push pointer 0
+call JetpackJourneyGame.whiteout 1
+pop temp 0
+push pointer 0
+call JetpackJourneyGame.drawName 1
+pop temp 0
+push pointer 0
+call JetpackJourneyGame.drawJumpInstruction 1
+pop temp 0
+push pointer 0
+call JetpackJourneyGame.drawQuitInstruction 1
+pop temp 0
+push this 4
+call Player.new 1
+pop this 0
+label WHILE_EXP0
+push local 1
+push this 6
+lt
+not
+if-goto WHILE_END0
+push local 1
+push this 5
+add
+pop pointer 1
+push that 0
+pop local 0
+push local 0
+call Pipe.dispose 1
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+goto WHILE_EXP0
+label WHILE_END0
+push constant 0
+pop this 6
+push constant 0
+pop this 10
+push constant 0
+pop this 2
+push constant 0
+pop this 3
+push this 7
+pop this 8
+push constant 0
+return
+function JetpackJourneyGame.whiteout 0
+push argument 0
+pop pointer 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 0
+push constant 0
+push constant 511
+push constant 255
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function JetpackJourneyGame.displayScore 1
+push argument 0
+pop pointer 0
+push constant 0
+pop local 0
+push pointer 0
+call JetpackJourneyGame.calculateScore 1
+pop local 0
+push this 1
+push local 0
+call Scoreboard.draw 2
+pop temp 0
+push constant 0
+return
+function JetpackJourneyGame.updatePlayerFallState 0
+push argument 0
+pop pointer 0
+push this 3
+push constant 1
+add
+push constant 5
+call MyMath.mod 2
+pop this 3
+push this 3
+push constant 0
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push this 0
+call Player.moveUp 1
+pop temp 0
+label IF_FALSE0
+push constant 0
+return
+function JetpackJourneyGame.updatePlayerState 0
+push argument 0
+pop pointer 0
+push this 2
+push constant 1
+add
+push constant 5
+call MyMath.mod 2
+pop this 2
+push this 3
+push constant 0
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push this 0
+call Player.cyclePlayerState 1
+pop temp 0
+label IF_FALSE0
+push constant 0
+return
+function JetpackJourneyGame.draw 1
+push argument 0
+pop pointer 0
+push pointer 0
+call JetpackJourneyGame.movePipesLeft 1
+pop temp 0
+push pointer 0
+call JetpackJourneyGame.disposeUnseenPipe 1
+pop temp 0
+push pointer 0
+call JetpackJourneyGame.createNewPipe 1
+pop temp 0
+push this 0
+call Player.draw 1
+pop temp 0
+push constant 0
+return
+function JetpackJourneyGame.movePipesLeft 2
+push argument 0
+pop pointer 0
+push constant 0
+pop local 1
+label WHILE_EXP0
+push local 1
+push this 6
+lt
+not
+if-goto WHILE_END0
+push local 1
+push this 5
+add
+pop pointer 1
+push that 0
+pop local 0
+push local 0
+call Pipe.draw 1
+pop temp 0
+push local 0
+call Pipe.moveLeft 1
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+goto WHILE_EXP0
+label WHILE_END0
+push constant 0
+return
+function JetpackJourneyGame.disposeUnseenPipe 2
+push argument 0
+pop pointer 0
+push this 6
+push constant 0
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 0
+return
+label IF_FALSE0
+push constant 0
+push this 5
+add
+pop pointer 1
+push that 0
+pop local 1
+push local 1
+call Pipe.getWidthCurrent 1
+push constant 1
+lt
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push local 1
+call Pipe.dispose 1
+pop temp 0
+push this 6
+push constant 1
+sub
+pop this 6
+push constant 0
+pop local 0
+label WHILE_EXP0
+push local 0
+push this 6
+lt
+not
+if-goto WHILE_END0
+push local 0
+push this 5
+add
+push local 0
+push constant 1
+add
+push this 5
+add
+pop pointer 1
+push that 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP0
+label WHILE_END0
+label IF_FALSE1
+push constant 0
+return
+function JetpackJourneyGame.createNewPipe 1
+push argument 0
+pop pointer 0
+push this 8
+push this 7
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push this 6
+push this 5
+add
+push this 9
+call Pipe.new 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push this 6
+push constant 1
+add
+pop this 6
+push this 10
+push constant 1
+add
+pop this 10
+push constant 0
+pop this 8
+goto IF_END0
+label IF_FALSE0
+push constant 0
+push this 5
+add
+pop pointer 1
+push that 0
+pop local 0
+push this 8
+push local 0
+call Pipe.getWidthIncrement 1
+add
+pop this 8
+label IF_END0
+push constant 0
+return
+function JetpackJourneyGame.calculateScore 3
+push argument 0
+pop pointer 0
+push this 10
+pop local 2
+push constant 0
+pop local 1
+label WHILE_EXP0
+push local 1
+push this 6
+lt
+not
+if-goto WHILE_END0
+push local 1
+push this 5
+add
+pop pointer 1
+push that 0
+pop local 0
+push this 0
+call Player.getXPos 1
+push local 0
+call Pipe.getXPos 1
+push local 0
+call Pipe.getWidthCurrent 1
+add
+push constant 1
+add
+lt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push local 2
+push constant 1
+sub
+pop local 2
+label IF_FALSE0
+push local 1
+push constant 1
+add
+pop local 1
+goto WHILE_EXP0
+label WHILE_END0
+push local 2
+return
+function JetpackJourneyGame.findCrash 2
+push argument 0
+pop pointer 0
+push constant 0
+pop local 1
+label WHILE_EXP0
+push local 1
+push this 6
+lt
+not
+if-goto WHILE_END0
+push local 1
+push this 5
+add
+pop pointer 1
+push that 0
+pop local 0
+push pointer 0
+push local 0
+call JetpackJourneyGame.crashes 2
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 0
+not
+return
+label IF_FALSE0
+push local 1
+push constant 1
+add
+pop local 1
+goto WHILE_EXP0
+label WHILE_END0
+push constant 0
+return
+function JetpackJourneyGame.crashes 0
+push argument 0
+pop pointer 0
+push this 0
+call Player.getYPos 1
+push constant 0
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 0
+not
+return
+label IF_FALSE0
+push this 0
+call Player.getYPos 1
+push this 0
+call Player.getHeight 1
+add
+push constant 254
+gt
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push constant 0
+not
+return
+label IF_FALSE1
+push argument 1
+call Pipe.getXPos 1
+push this 0
+call Player.getXPos 1
+push this 0
+call Player.getWidth 1
+add
+push constant 1
+add
+gt
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push constant 0
+return
+label IF_FALSE2
+push argument 1
+call Pipe.getXPos 1
+push argument 1
+call Pipe.getWidthCurrent 1
+add
+push this 0
+call Player.getXPos 1
+lt
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push constant 0
+return
+label IF_FALSE3
+push argument 1
+call Pipe.getGapTopY 1
+push this 0
+call Player.getYPos 1
+gt
+if-goto IF_TRUE4
+goto IF_FALSE4
+label IF_TRUE4
+push constant 0
+not
+return
+label IF_FALSE4
+push argument 1
+call Pipe.getGapBottomY 1
+push this 0
+call Player.getYPos 1
+push this 0
+call Player.getHeight 1
+add
+lt
+if-goto IF_TRUE5
+goto IF_FALSE5
+label IF_TRUE5
+push constant 0
+not
+return
+label IF_FALSE5
+push constant 0
+return
+function JetpackJourneyGame.dispose 2
+push argument 0
+pop pointer 0
+push constant 0
+pop local 1
+label WHILE_EXP0
+push local 1
+push this 6
+lt
+not
+if-goto WHILE_END0
+push local 1
+push this 5
+add
+pop pointer 1
+push that 0
+pop local 0
+push local 0
+call Pipe.dispose 1
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+goto WHILE_EXP0
+label WHILE_END0
+push this 1
+call Scoreboard.dispose 1
+pop temp 0
+push this 0
+call Player.dispose 1
+pop temp 0
+push pointer 0
+call Memory.deAlloc 1
+pop temp 0
+push constant 0
+return

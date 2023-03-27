@@ -1,0 +1,476 @@
+class NumbersDrafts{
+    function int drawZero(int cursorPosX, int cursorPosY, int size, int space, boolean color) {
+        var int width;
+        let width = 5 * size;
+
+        do Screen.setColor(color);
+        do Screen.drawRectangle(
+            cursorPosX + (size * 1),
+            cursorPosY,
+            cursorPosX + (size * 4),
+            cursorPosY + (size * 1)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX,
+            cursorPosY + (size * 1),
+            cursorPosX + (size * 1),
+            cursorPosY + (size * 6)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX + (size * 1),
+            cursorPosY + (size * 6),
+            cursorPosX + (size * 4),
+            cursorPosY + (size * 7)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX + (size * 4),
+            cursorPosY + (size * 1),
+            cursorPosX + (size * 5),
+            cursorPosY + (size * 6)
+        );
+
+        let cursorPosX = cursorPosX + width + space;
+        return cursorPosX;
+    }
+
+    function int drawOne(int cursorPosX, int cursorPosY, int size, int space, boolean color) {
+        var int width;
+        var int height;
+        let width = 5 * size;
+        let height = 7 * size;
+
+        do Screen.setColor(color);
+        do Screen.drawRectangle(cursorPosX, cursorPosY, cursorPosX + width, cursorPosY + height);
+
+        do Screen.setColor(~color);
+        do Screen.drawRectangle(
+            cursorPosX,
+            cursorPosY,
+            cursorPosX + (size * 2),
+            cursorPosY + size
+        );
+
+        do Screen.setColor(~color);
+        do Screen.drawRectangle(
+            cursorPosX,
+            cursorPosY + (size * 2),
+            cursorPosX + (size * 2),
+            cursorPosY + height - size
+        );
+
+        do Screen.setColor(~color);
+        do Screen.drawRectangle(
+            cursorPosX + (size * 3),
+            cursorPosY,
+            cursorPosX + width,
+            cursorPosY + height - size
+        );
+
+        let cursorPosX = cursorPosX + width + space;
+        return (cursorPosX);
+    }
+
+    function int drawTwo(int cursorPosX, int cursorPosY, int size, int space, boolean color) {
+        var int width;
+        let width = 5 * size;
+
+        do Screen.setColor(color);
+        do Screen.drawRectangle(
+            cursorPosX + size,
+            cursorPosY,
+            cursorPosX + (size * 4),
+            cursorPosY + size
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX,
+            cursorPosY + size,
+            cursorPosX + size,
+            cursorPosY + (size * 2)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX + (size * 4),
+            cursorPosY + size,
+            cursorPosX + (size * 5),
+            cursorPosY + (size * 2)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX + (size * 3),
+            cursorPosY + (size * 2),
+            cursorPosX + (size * 4),
+            cursorPosY + (size * 3)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX + (size * 2),
+            cursorPosY + (size * 3),
+            cursorPosX + (size * 3),
+            cursorPosY + (size * 4)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX + (size * 1),
+            cursorPosY + (size * 4),
+            cursorPosX + (size * 2),
+            cursorPosY + (size * 5)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX,
+            cursorPosY + (size * 5),
+            cursorPosX + (size * 1),
+            cursorPosY + (size * 6)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX,
+            cursorPosY + (size * 6),
+            cursorPosX + (size * 5),
+            cursorPosY + (size * 7)
+        );
+
+        let cursorPosX = cursorPosX + width + space;
+        return (cursorPosX);
+    }
+
+    function int drawThree(int cursorPosX, int cursorPosY, int size, int space, boolean color) {
+        var int width;
+        let width = 5 * size;
+
+        do Screen.setColor(color);
+        do Screen.drawRectangle(
+            cursorPosX + size,
+            cursorPosY,
+            cursorPosX + (size * 4),
+            cursorPosY + size
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX,
+            cursorPosY + size,
+            cursorPosX + size,
+            cursorPosY + (size * 2)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX + (size * 4),
+            cursorPosY + (size * 1),
+            cursorPosX + (size * 5),
+            cursorPosY + (size * 3)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX + (size * 2),
+            cursorPosY + (size * 3),
+            cursorPosX + (size * 4),
+            cursorPosY + (size * 4)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX + (size * 4),
+            cursorPosY + (size * 4),
+            cursorPosX + (size * 5),
+            cursorPosY + (size * 6)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX + (size * 0),
+            cursorPosY + (size * 5),
+            cursorPosX + (size * 1),
+            cursorPosY + (size * 6)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX + (size * 1),
+            cursorPosY + (size * 6),
+            cursorPosX + (size * 4),
+            cursorPosY + (size * 7)
+        );
+
+        let cursorPosX = cursorPosX + width + space;
+        return (cursorPosX);
+    }
+
+    function int drawFour(int cursorPosX, int cursorPosY, int size, int space, boolean color) {
+        var int width;
+        let width = 5 * size;
+
+        do Screen.setColor(color);
+        do Screen.drawRectangle(
+            cursorPosX,
+            cursorPosY,
+            cursorPosX + (size * 1),
+            cursorPosY + (size * 4)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX,
+            cursorPosY + (size * 3),
+            cursorPosX + (size * 5),
+            cursorPosY + (size * 4)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX + (size * 4),
+            cursorPosY,
+            cursorPosX + (size * 5),
+            cursorPosY + (size * 7)
+        );
+
+        let cursorPosX = cursorPosX + width + space;
+        return (cursorPosX);
+    }
+
+    function int drawFive(int cursorPosX, int cursorPosY, int size, int space, boolean color) {
+        var int width;
+        let width = 5 * size;
+
+        do Screen.setColor(color);
+        do Screen.drawRectangle(
+            cursorPosX,
+            cursorPosY,
+            cursorPosX + (size * 5),
+            cursorPosY + (size * 1)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX,
+            cursorPosY,
+            cursorPosX + (size * 1),
+            cursorPosY + (size * 4)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX,
+            cursorPosY + (size * 3),
+            cursorPosX + (size * 4),
+            cursorPosY + (size * 4)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX + (size * 4),
+            cursorPosY + (size * 4),
+            cursorPosX + (size * 5),
+            cursorPosY + (size * 6)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX,
+            cursorPosY + (size * 6),
+            cursorPosX + (size * 4),
+            cursorPosY + (size * 7)
+        );
+
+        let cursorPosX = cursorPosX + width + space;
+        return cursorPosX;
+    }
+
+    function int drawSix(int cursorPosX, int cursorPosY, int size, int space, boolean color) {
+        var int width;
+        let width = 5 * size;
+
+        do Screen.setColor(color);
+        do Screen.drawRectangle(
+            cursorPosX + size,
+            cursorPosY,
+            cursorPosX + (size * 4),
+            cursorPosY + size
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX,
+            cursorPosY + size,
+            cursorPosX + (size * 1),
+            cursorPosY + (size * 6)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX + (size * 4),
+            cursorPosY + (size * 1),
+            cursorPosX + (size * 5),
+            cursorPosY + (size * 2)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX + (size * 1),
+            cursorPosY + (size * 3),
+            cursorPosX + (size * 4),
+            cursorPosY + (size * 4)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX + (size * 4),
+            cursorPosY + (size * 4),
+            cursorPosX + (size * 5),
+            cursorPosY + (size * 6)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX + (size * 1),
+            cursorPosY + (size * 6),
+            cursorPosX + (size * 4),
+            cursorPosY + (size * 7)
+        );
+
+        let cursorPosX = cursorPosX + width + space;
+        return cursorPosX;
+    }
+
+    function int drawSeven(int cursorPosX, int cursorPosY, int size, int space, boolean color) {
+        var int width;
+        let width = 5 * size;
+
+        do Screen.setColor(color);
+        do Screen.drawRectangle(
+            cursorPosX,
+            cursorPosY,
+            cursorPosX + (size * 5),
+            cursorPosY + size
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX + (size * 4),
+            cursorPosY + (size * 1),
+            cursorPosX + (size * 5),
+            cursorPosY + (size * 2)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX + (size * 3),
+            cursorPosY + (size * 2),
+            cursorPosX + (size * 4),
+            cursorPosY + (size * 3)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX + (size * 2),
+            cursorPosY + (size * 3),
+            cursorPosX + (size * 3),
+            cursorPosY + (size * 7)
+        );
+
+        let cursorPosX = cursorPosX + width + space;
+        return cursorPosX;
+    }
+
+    function int drawEight(int cursorPosX, int cursorPosY, int size, int space, boolean color) {
+        var int width;
+        let width = 5 * size;
+
+        do Screen.setColor(color);
+        do Screen.drawRectangle(
+            cursorPosX + size,
+            cursorPosY,
+            cursorPosX + (size * 4),
+            cursorPosY + size
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX,
+            cursorPosY + size,
+            cursorPosX + size,
+            cursorPosY + (size * 3)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX + (size * 4),
+            cursorPosY + (size * 1),
+            cursorPosX + (size * 5),
+            cursorPosY + (size * 3)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX + (size * 1),
+            cursorPosY + (size * 3),
+            cursorPosX + (size * 4),
+            cursorPosY + (size * 4)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX + (size * 4),
+            cursorPosY + (size * 4),
+            cursorPosX + (size * 5),
+            cursorPosY + (size * 6)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX + (size * 0),
+            cursorPosY + (size * 4),
+            cursorPosX + (size * 1),
+            cursorPosY + (size * 6)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX + (size * 1),
+            cursorPosY + (size * 6),
+            cursorPosX + (size * 4),
+            cursorPosY + (size * 7)
+        );
+
+        let cursorPosX = cursorPosX + width + space;
+        return cursorPosX;
+    }
+
+    function int drawNine(int cursorPosX, int cursorPosY, int size, int space, boolean color) {
+        var int width;
+        let width = 5 * size;
+
+        do Screen.setColor(color);
+        do Screen.drawRectangle(
+            cursorPosX + size,
+            cursorPosY,
+            cursorPosX + (size * 4),
+            cursorPosY + size
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX,
+            cursorPosY + size,
+            cursorPosX + size,
+            cursorPosY + (size * 3)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX + (size * 4),
+            cursorPosY + (size * 1),
+            cursorPosX + (size * 5),
+            cursorPosY + (size * 3)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX + (size * 1),
+            cursorPosY + (size * 3),
+            cursorPosX + (size * 4),
+            cursorPosY + (size * 4)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX + (size * 4),
+            cursorPosY + (size * 4),
+            cursorPosX + (size * 5),
+            cursorPosY + (size * 6)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX + (size * 0),
+            cursorPosY + (size * 5),
+            cursorPosX + (size * 1),
+            cursorPosY + (size * 6)
+        );
+
+        do Screen.drawRectangle(
+            cursorPosX + (size * 1),
+            cursorPosY + (size * 6),
+            cursorPosX + (size * 4),
+            cursorPosY + (size * 7)
+        );
+
+        let cursorPosX = cursorPosX + width + space;
+        return cursorPosX;
+    }
+}

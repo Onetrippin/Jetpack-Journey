@@ -1,0 +1,131 @@
+class Scoreboard
+{
+  field int score;                  
+  field int space;                     // Расстояние между символами
+  field int startScorePosX;            // Координата по X, с которой начинается надпись
+  field int cursorPosX, cursorPosY;    // Текущая координата курсора по X, Y
+  field int size;                   
+
+  constructor Scoreboard new() {
+    let space = 15;
+    let startScorePosX = 150;
+    let cursorPosY = 100;
+    let size = 4;
+    return this;
+  }
+
+  /* Рисуем очки */
+  method void draw(int score) {
+    let cursorPosX = startScorePosX;
+    do drawHeading();
+    do drawScore(score);
+    return;
+  }
+
+  /** Рисуем надпись "SCORE:" */
+  method void drawHeading() {
+    do blackout();
+    let cursorPosX = LettersAndSymbolsDrafts.drawS(cursorPosX, cursorPosY, size, space, false);
+    let cursorPosX = LettersAndSymbolsDrafts.drawC(cursorPosX, cursorPosY, size, space, false);
+    let cursorPosX = LettersAndSymbolsDrafts.drawO(cursorPosX, cursorPosY, size, space, false);
+    let cursorPosX = LettersAndSymbolsDrafts.drawR(cursorPosX, cursorPosY, size, space, false);
+    let cursorPosX = LettersAndSymbolsDrafts.drawE(cursorPosX, cursorPosY, size, space, false);
+    let cursorPosX = LettersAndSymbolsDrafts.drawColon(cursorPosX, cursorPosY, size, space, false);
+    return;
+  }
+
+  /** Рисуем количество очков */
+  method void drawScore(int score) {
+    var Array digits;
+    var int digit;
+    var int i;
+
+    let digits = getScoreDigits(score);
+    let i = 1;
+    while (i < (digits[0] + 1)) {
+      let digit = digits[i];
+      if (digit = 0) {
+        let cursorPosX = NumbersDrafts.drawZero(cursorPosX, cursorPosY, size, space, false);
+      }
+      if (digit = 1) {
+        let cursorPosX = NumbersDrafts.drawOne(cursorPosX, cursorPosY, size, space, false);
+      }
+      if (digit = 2) {
+        let cursorPosX = NumbersDrafts.drawTwo(cursorPosX, cursorPosY, size, space, false);
+      }
+      if (digit = 3) {
+        let cursorPosX = NumbersDrafts.drawThree(cursorPosX, cursorPosY, size, space, false);
+      }
+      if (digit = 4) {
+        let cursorPosX = NumbersDrafts.drawFour(cursorPosX, cursorPosY, size, space, false);
+      }
+      if (digit = 5) {
+        let cursorPosX = NumbersDrafts.drawFive(cursorPosX, cursorPosY, size, space, false);
+      }
+      if (digit = 6) {
+        let cursorPosX = NumbersDrafts.drawSix(cursorPosX, cursorPosY, size, space, false);
+      }
+      if (digit = 7) {
+        let cursorPosX = NumbersDrafts.drawSeven(cursorPosX, cursorPosY, size, space, false);
+      }
+      if (digit = 8) {
+        let cursorPosX = NumbersDrafts.drawEight(cursorPosX, cursorPosY, size, space, false);
+      }
+      if (digit = 9) {
+        let cursorPosX = NumbersDrafts.drawNine(cursorPosX, cursorPosY, size, space, false);
+      }
+      let i = i + 1;
+    }
+    return;
+  }
+
+  /** Создаем массив цифр, которые нужно отрисовать 
+  (digits[0] - количество цифр в score) */
+  method Array getScoreDigits(int score) {
+    var int remainder;
+    var Array digits;
+    let digits = Array.new(5);
+
+    if (score > 999) {
+      let score = 1000;     // Больше 1000 очков игрок набрать не может 
+      let digits[0] = 4;   
+      let digits[1] = 1;
+      let digits[2] = 0;
+      let digits[3] = 0;
+      let digits[4] = 0;
+      return digits;
+    }
+
+    if (score > 99) {
+      let digits[0] = 3;
+      let digits[1] = score/100;  // Определяем цифру в сотнях
+      let remainder = MyMath.mod(score, 100);
+      let digits[2] = remainder/10; //  Оперделяем цифру в десятках
+      let digits[3] = MyMath.mod(remainder, 10); // Определяем цифру в единицах
+      return digits;
+    }
+
+    if (score > 9) {
+      let digits[0] = 2;    
+      let digits[1] = score/10; // Оперделяем цифру в десятках
+      let digits[2] = MyMath.mod(score, 10); // Определяем цифру в единицах
+      return digits;
+    }
+    let digits[0] = 1;    
+    let digits[1] = score;
+    return digits;
+  }
+
+  /** Заполняем весь экран черным (у нас будет белая надпись на черном экране) */
+  method void blackout() {
+    do Screen.setColor(true);
+    do Screen.drawRectangle(0, 0, 511, 255);
+    return;
+  }
+
+  /** Удаляем все объекты, созданные в данном классе */
+  method void dispose() {
+     do Memory.deAlloc(this);
+     return;
+  }
+}

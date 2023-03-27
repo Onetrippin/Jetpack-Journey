@@ -1,0 +1,362 @@
+class JetpackJourneyGame
+{
+  field Player player;                    
+  field Scoreboard scoreboard;            
+  field int numPlayerState;             // номер состояния игрока
+  field int playerFallCount;            // количество падений игрока вверх 
+  field int playerYPosDefault;          // стартовая координата игрока по Y 
+  field Array pipes;                  
+  field int countPipes;                 // количество отображенных на экране колонн
+  field int distBetweenPipes;           // Расстояние между двумя соседними колоннами
+  field int distAfterLastPipe;          // Расстояние после последней созданной колонной
+  field int jumpsAmount;                // Количество сделанных прыжков
+  field int totalPipesAmount;           // Количество созданных колонн
+  field int space;                      // Расстояние меджу буквами в надписи
+  field int cursorPosX, cursorPosY;
+  field int size;
+
+  constructor JetpackJourneyGame new() {
+    let playerYPosDefault = 150;
+    let scoreboard = Scoreboard.new();
+    let pipes = Array.new(10);
+    let countPipes = 0;
+    let distBetweenPipes = 100;
+    let distAfterLastPipe = 0;
+    let jumpsAmount = 1;
+    let totalPipesAmount = 0;
+    return this;
+  }
+
+  /** Отображение названия игры */
+  method void drawName() {
+    let cursorPosX = 80;
+    let cursorPosY = 10;
+    let space = 5;
+    let size = 4; 
+  
+    let cursorPosX = LettersAndSymbolsDrafts.drawJ(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawE(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawT(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawP(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawA(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawC(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawK(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = cursorPosX + space;
+    let cursorPosX = LettersAndSymbolsDrafts.drawJ(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawO(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawU(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawR(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawN(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawE(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawY(cursorPosX, cursorPosY, size, space, true);
+    return;
+  }
+
+  /** Отображение инструкции про прыжок */
+  method void drawJumpInstruction() {
+    let cursorPosX = 110;
+    let cursorPosY = 50;
+    let space = 4;
+    let size = 2;
+
+    let cursorPosX = LettersAndSymbolsDrafts.drawP(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawR(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawE(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawS(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawS(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = cursorPosX + space;
+    let cursorPosX = LettersAndSymbolsDrafts.drawS(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawP(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawA(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawC(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawE(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = cursorPosX + space;
+    let cursorPosX = LettersAndSymbolsDrafts.drawB(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawA(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawR(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = cursorPosX + space;
+    let cursorPosX = LettersAndSymbolsDrafts.drawT(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawO(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = cursorPosX + space;
+    let cursorPosX = LettersAndSymbolsDrafts.drawJ(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawU(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawM(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawP(cursorPosX, cursorPosY, size, space, true);
+    return;
+  }
+
+  /** Отображение инструкции про выход */
+  method void drawQuitInstruction() {
+    let cursorPosX = 170;
+    let cursorPosY = 230;
+    let space = 3;
+    let size = 2;
+
+    let cursorPosX = LettersAndSymbolsDrafts.drawP(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawR(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawE(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawS(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawS(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = cursorPosX + space;
+    let cursorPosX = LettersAndSymbolsDrafts.drawQuote(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawQ(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawQuote(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = cursorPosX + space;
+    let cursorPosX = LettersAndSymbolsDrafts.drawT(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawO(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = cursorPosX + space;
+    let cursorPosX = LettersAndSymbolsDrafts.drawQ(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawU(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawI(cursorPosX, cursorPosY, size, space, true);
+    let cursorPosX = LettersAndSymbolsDrafts.drawT(cursorPosX, cursorPosY, size, space, true);
+    return;
+  }
+
+  /** Удаление заголовка и 2 инструкций */
+  method void eraseInscriptions(){
+    do Screen.setColor(false);
+    do Screen.drawRectangle(0, 0, 511, 80);
+    do Screen.drawRectangle(0, cursorPosY, 511, 255);
+    return;
+  }
+
+  /** Основной метод игры */
+  method void run() {
+    var char key;
+    var char last_key;
+    do initializeGameState();
+    do waitForGameToStart();
+    let last_key = 32;
+    while (~(key = 81)) { // Если была нажата не 'q'
+      // Определяем был ли нажат пробел
+      if ((key = 32) & ~(last_key = 32)) {
+        let jumpsAmount = jumpsAmount + 1;
+        do player.moveDown();
+      } else {
+        do updatePlayerFallState();
+        do updatePlayerState();
+      }
+      // Если произошло столкновение, то выводим счет и возвращаемся на стартовое окно 
+      if (findCrash()) {
+        do displayScore();
+        do Sys.wait(4000);
+        do initializeGameState();
+        do waitForGameToStart();
+      }
+      do draw();
+      let last_key = key;
+      let key = Keyboard.keyPressed();
+      do Sys.wait(10);
+    }
+    return;
+  }
+
+  /** Рисуем движущегося игрка на стартовом экрне и ждем, когда игрок начнет играть */
+  method void waitForGameToStart() {
+    var char key;
+    let key = Keyboard.keyPressed();
+    while (key = 0) {
+       do Sys.wait(10);
+       let key = Keyboard.keyPressed();
+       do player.draw();
+       do updatePlayerState();
+    }
+    do eraseInscriptions();
+    return;
+  }
+
+  /** Инициализируем все объекты в предстартовое состояние */
+  method void initializeGameState() {
+    var Pipe pipe;
+    var int i;
+    let i = 0;
+    do whiteout();
+    do drawName();
+    do drawJumpInstruction();
+    do drawQuitInstruction();
+    let player = Player.new(playerYPosDefault);
+    // Удаляем все колонны с прошлой игры
+    while (i < countPipes) {
+      let pipe = pipes[i];
+      do pipe.dispose();
+      let i = i + 1;
+    }
+    let countPipes = 0;
+    let totalPipesAmount = 0;
+    let numPlayerState = 0;
+    let playerFallCount = 0;
+    let distAfterLastPipe = distBetweenPipes;
+    return;
+  }
+
+  /** Чистим экран */
+  method void whiteout() {
+    do Screen.setColor(false);
+    do Screen.drawRectangle(0, 0, 511, 255);
+    return;
+  }
+
+  /* Выводим окно с итоговым результатом */
+  method void displayScore() {
+    var int score;
+    let score = 0;
+    let score = calculateScore();
+    do scoreboard.draw(score);
+    return;
+  }
+
+  /** Обновляем количество падений, передвигая игрока только после 3 циклов отрисовки,
+  чтобы не он падал слишком быстро */
+  method void updatePlayerFallState() {
+    let playerFallCount = MyMath.mod(playerFallCount + 1,5);
+    if (playerFallCount = 0) {
+      do player.moveUp();
+    }
+    return;
+  }
+
+  /** Обновляем состояние игрока раз в 5 циклов отрисовки, чтобы состояния не менялись слишком часто */
+  method void updatePlayerState() {
+    let numPlayerState = MyMath.mod(numPlayerState + 1,5);
+    if (playerFallCount = 0) {
+      do player.cyclePlayerState();
+    }
+    return;
+  }
+
+  /** Рисуем все объекты на экране */
+  method void draw() {
+    var Pipe pipe;
+    do movePipesLeft();
+    do disposeUnseenPipe();
+    do createNewPipe();
+    do player.draw();
+    return;
+  }
+
+  /* Рисуем и сдвигаем колонны влево */
+  method void movePipesLeft() {
+    var Pipe pipe;
+    var int i;
+    let i = 0;
+    while (i < countPipes) {
+      let pipe = pipes[i];
+      do pipe.draw();
+      do pipe.moveLeft();
+      let i = i + 1;
+    }
+    return;
+  }
+
+  /* Удаляем колонны, которые не входят на экран */
+  method void disposeUnseenPipe() {
+    var int i;
+    var Pipe pipe;
+    if (countPipes = 0) {
+      return;
+    }
+    let pipe = pipes[0];
+    if (pipe.getWidthCurrent() < 1) {
+      do pipe.dispose();
+      let countPipes = countPipes - 1;
+      let i = 0;
+      while (i < countPipes) {
+        let pipes[i] = pipes[i+1];
+        let i = i + 1;
+      }
+    }
+    return;
+  }
+
+  /* Рисуем новые колонны на экране */
+  method void createNewPipe() {
+    var Pipe pipe;
+    if (distAfterLastPipe = distBetweenPipes) {
+      let pipes[countPipes] = Pipe.new(jumpsAmount);
+      let countPipes = countPipes + 1;
+      let totalPipesAmount = totalPipesAmount + 1;
+      let distAfterLastPipe = 0;
+    } else {
+      let pipe = pipes[0];
+      let distAfterLastPipe = distAfterLastPipe + pipe.getWidthIncrement();
+    }
+    return;
+  }
+
+  /* Подсчет очков */
+  method int calculateScore() {
+    var Pipe pipe;
+    var int i;
+    var int score;
+    let score = totalPipesAmount;
+    let i = 0;
+    while (i < countPipes) {
+      let pipe = pipes[i];
+      if (player.getXPos() < (pipe.getXPos() + pipe.getWidthCurrent() + 1)) {
+        let score = score - 1;
+      }
+      let i = i + 1;
+    }
+    return score;
+  }
+
+  /* Определяем было ли столкновение */
+  method boolean findCrash() {
+    var Pipe pipe;
+    var int i;
+    let i = 0;
+    while (i < countPipes) {
+      let pipe = pipes[i];
+      if (crashes(pipe)) {
+        return true;
+      }
+      let i = i + 1;
+    }
+    return false;
+  }
+
+  /* Определяем было ли столкновение с каким-либо объектом (колонной, верхом/низом экрана) */
+  method boolean crashes(Pipe pipe) {
+    // Столкновение с верхом экрана
+    if (player.getYPos() = 0) {
+      return true;
+    }
+    // Столкновение с низом экрана
+    if ((player.getYPos() + player.getHeight()) > 254) {
+      return true;
+    }
+    // Игрок перед колонной
+    if (pipe.getXPos() > (player.getXPos() + player.getWidth() + 1)) {
+      return false;
+    }
+    // Игрок прошел колонну
+    if ((pipe.getXPos() + pipe.getWidthCurrent()) < player.getXPos()) {
+      return false;
+    }
+    // Игрок столкнулся с верхом колонны
+    if (pipe.getGapTopY() > player.getYPos()) {
+      return true;
+    }
+    // Игрок столкнулся с низом колонны
+    if (pipe.getGapBottomY() < (player.getYPos() + player.getHeight())) {
+      return true;
+    }
+    return false;
+  }
+
+  /* Удаляем все объекты, созданные в данном классе */
+  method void dispose() {
+    var Pipe pipe;
+    var int i;
+    let i = 0;
+    while (i < countPipes) {
+     let pipe = pipes[i];
+     do pipe.dispose();
+     let i = i + 1;
+    }
+    do scoreboard.dispose();
+    do player.dispose();
+    do Memory.deAlloc(this);
+    return;
+  }
+}

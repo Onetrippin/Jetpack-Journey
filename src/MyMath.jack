@@ -1,0 +1,11 @@
+class MyMath
+{
+  /** Функция, находящая остаток от деления */
+  function int mod(int dividend, int divisor) {
+    var int quotient;
+    var int remainder;
+    let quotient = dividend / divisor;
+    let remainder = dividend - (quotient * divisor);
+    return remainder;
+  }
+}
